@@ -33,13 +33,12 @@ h1 {
   text-align: center;
 }
 
-label {
+label:not(.checkbox) {
   display: block;
 }
 
 button,
-input,
-textarea {
+input {
   border: 1px solid var(--muted-color);
   font-family: var(--font-family);
   font-size: 1rem;
@@ -48,14 +47,16 @@ textarea {
   padding: 0.375rem 0.75rem;
 }
 
-input,
-textarea {
-  resize: none;
+input:not([type="checkbox"]) {
   width: 100%;
 }
 
-input:focus,
-textarea:focus {
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.25);
+}
+
+input:focus {
   outline: var(--primary-color) solid 1px;
 }
 
@@ -88,4 +89,8 @@ form > div {
   font-size: 4rem;
   padding: 1rem;
   text-align: center;
+}
+
+.barcode.text {
+  font-family: "Libre Barcode 128 Text";
 }

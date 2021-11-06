@@ -3,15 +3,16 @@ import React, { FormEvent, useState } from "react";
 type Props = {
   disabled?: boolean;
   errorMessage?: string;
-  onSubmit: (text: string) => void;
+  onSubmit: (text: string, withText: boolean) => void;
 };
 
 function BarcodeForm({ disabled, errorMessage, onSubmit }: Props) {
   const [text, setText] = useState("");
+  const [withText, setWithText] = useState(false);
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    onSubmit(text);
+    onSubmit(text, withText);
   };
 
   return (
@@ -21,9 +22,21 @@ function BarcodeForm({ disabled, errorMessage, onSubmit }: Props) {
         <input
           disabled={disabled}
           id="text"
-          onInput={(e) => setText(e.currentTarget.value)}
+          onChange={(e) => setText(e.currentTarget.value)}
           value={text}
         />
+      </div>
+
+      <div>
+        <input
+          checked={withText}
+          id="withText"
+          onChange={(e) => setWithText(e.currentTarget.checked)}
+          type="checkbox"
+        />
+        <label className="checkbox" htmlFor="withText">
+          Generate barcode with text
+        </label>
       </div>
 
       {errorMessage && <div className="error">{errorMessage}</div>}

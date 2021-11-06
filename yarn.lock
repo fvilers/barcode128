@@ -1177,6 +1177,36 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fvilers/cls@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@fvilers/cls/-/cls-1.0.2.tgz#2ac37e029c575e52acb53d9bdc1850ffa8ee5d77"
+  integrity sha512-UoHg8TCIIUEmrDB0WQv3ZRm1PFu58zpAmxWD4UrTpwzjtJ0k0qVQSS2F7tMZcWd6oFBvpa+LNZsOGLm1KctXGg==
+  dependencies:
+    "@fvilers/is-boolean" "^1.0.0"
+    "@fvilers/is-number" "^1.0.1"
+    "@fvilers/is-object" "^1.0.0"
+    "@fvilers/is-string" "^1.0.0"
+
+"@fvilers/is-boolean@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fvilers/is-boolean/-/is-boolean-1.0.0.tgz#69fda247a04ed332ba9a3bc867839fbf43079cfb"
+  integrity sha512-grLeZGLFuN/zUbVEQG41g4KWBjHz7fA5IZ+yLQAG7v0K8Q3dir6rGTjQHF7GcMeGbh/zsb+xdeSWsBHlWiUYoA==
+
+"@fvilers/is-number@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@fvilers/is-number/-/is-number-1.0.1.tgz#24c05d9d716e07a2abd3431f2d0daf817b870dd0"
+  integrity sha512-XjTAbzb37nQDij4VT+q1PbodlxNlKMcL6kvJce6RAdXlpGYROlrVvF38PErGsUQ2WkQYojlYhWn5n1O+G8kIYw==
+
+"@fvilers/is-object@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fvilers/is-object/-/is-object-1.0.0.tgz#8d59ecd777a2d66279f6e5c4257b31bc1fe75545"
+  integrity sha512-YldvT1HPVztAatb6yu/UZBkUzQ/x1v8ad1PXK3WyufZUdB+l0QIzPbUr2QCqHmHa24THz+66zOIlN+JOyUtFMg==
+
+"@fvilers/is-string@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fvilers/is-string/-/is-string-1.0.0.tgz#c4c495fd1549df772686988e8b4ad867bf3b9d05"
+  integrity sha512-eVyZwn3qKHGbPbPrwILV5KhoPn5SSemwUubYXn8+mx7a2fJv7Dys9AZHUJqAGyhf5oMV94vB1AzHl59e83CKdQ==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
