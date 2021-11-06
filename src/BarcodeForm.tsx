@@ -26,7 +26,7 @@ function BarcodeForm({ disabled, errorMessage, onSubmit }: Props) {
         />
       </div>
 
-      {errorMessage && <div>{errorMessage}</div>}
+      {errorMessage && <div className="error">{errorMessage}</div>}
 
       <div>
         <button disabled={disabled} type="submit">

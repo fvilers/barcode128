@@ -1,4 +1,4 @@
-import encodeBarcode, { START_CODES, STOP_PATTERN } from "./barcode";
+import encodeBarcode, { START_CODES, STOP_PATTERN } from "./barcode-encoder";
 
 describe("encodeBarCode", () => {
   test("should throw an error for empty string", () => {

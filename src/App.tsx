@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import encodeBarcode from "./barcode";
+import Barcode from "./Barcode";
+import encodeBarcode from "./barcode-encoder";
 import BarcodeForm from "./BarcodeForm";
 
 function App() {
@@ -11,12 +12,12 @@ function App() {
   };
 
   return (
-    <div>
+    <main>
       <h1>Barcode 128</h1>
       <BarcodeForm onSubmit={handleGeneration} />
 
-      {result && <div className="barcode">{result}</div>}
-    </div>
+      {result && <Barcode text={result} />}
+    </main>
   );
 }
 
